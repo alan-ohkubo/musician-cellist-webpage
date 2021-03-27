@@ -10,28 +10,31 @@
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/sidebar.js"></script>
+    <script src="js/form.js"></script>
 </head>
 
 <body>
     <header>
-        
+        <!-- sidebar, needs links/href -->
+        <div id="sideNav" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a onclick="returnHome()">Home</a>
+            <a onclick="openBio()">Biography</a>
+            <a onclick="openTeaching()">Teaching</a>
+            <a>Listen</a>
+            <a>Contact</a>
+        </div>
+
+        <div>
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <!-- <h2>Collapsed Sidebar</h2> -->
+            <!-- <p>Content</p> -->
+        </div> 
     </header>
-    <!-- sidebar, needs links/href -->
-    <div id="sideNav" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a onclick="returnHome()">Home</a>
-        <a onclick="openBio()">Biography</a>
-        <a onclick="openTeaching()">Teaching</a>
-        <a>Listen</a>
-        <a>Contact</a>
-    </div>
+    
+    <main>
 
-    <div>
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <!-- <h2>Collapsed Sidebar</h2> -->
-        <!-- <p>Content</p> -->
-    </div>
-
+    </main>
     <!-- Welcome div -->
     <div id="greeting" class="main">
         <h1>Welcome to My Website</h1>
@@ -87,7 +90,48 @@
 
     <!-- Contact  -->
     <div id="contact" class="contact">
-        <h1>Contact</h1>
+        <!-- action needs a URL server-side; method: HTTP + "POST or GET" -->
+        <form action="index.html" method="post">
+    
+            <h1>Contact</h1>
+
+            <fieldset>
+
+                <legend><span class="number">1.</span> Your Basic Info</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name"><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="mail" name="user_email"><br>
+
+                <label>I am interested in:</label><br>
+                <input type="checkbox" id="cellolessons" name="user_interest"><label for="interest">Cello Lessons</label><br>
+                <input type="checkbox" id="performances" name="user_interest"><label for="interest">Performances</label><br>
+                <input type="checkbox" id="other" name="user_interest"><label for="interest">Other</label><br>
+
+                <!-- <label for="interest">I am interested in:</label>
+                <select name="user_interest" id="interest">
+                    <option value="lessons">Cello Lessons</option>
+                    <option value="performances">Performances</option>
+                    <option value="other">Other</option>
+                </select> -->
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend><span class="number">2.</span> Message</legend>
+
+
+                <label for="message">Message:</label>
+                <textarea name="user_message" id="message"></textarea>
+
+            </fieldset>
+
+            <button type="submit" onclick="formSubmitMessage()">Submit</button>
+
+        </form>
     </div>
     
 
