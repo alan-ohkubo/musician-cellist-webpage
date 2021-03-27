@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="normalize" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/sidebar.js"></script>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <!-- sidebar, needs links/href -->
+    <div id="sideNav" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="returnHome()">Home</a>
+        <a onclick="openBio()">Biography</a>
+        <a onclick="openTeaching()">Teaching</a>
+        <a>Listen</a>
+        <a>Contact</a>
+    </div>
+
+    <div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <!-- <h2>Collapsed Sidebar</h2> -->
+        <!-- <p>Content</p> -->
+    </div>
+
+    <!-- Welcome div -->
+    <div id="greeting" class="main">
+        <h1>Welcome to My Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in arcu faucibus, semper nibh id, dictum odio. Nam congue tortor sed libero interdum, eu aliquam eros cursus. Praesent tristique consequat elit a dapibus. Donec fringilla neque a odio posuere rhoncus. Duis iaculis, neque eu convallis rhoncus, urna sem ornare tellus, non dapibus lorem magna at ante.
+
+        </p>
+    </div>
+
+    <!-- Bio div, content needs to be updated-->
+    <div id="bio" class="main">
+        <h1>Biography</h1>
+        <p>Cellist, Alan Ohkubo...completed a fellowship at the New World Symphony in Miami Beach, Florida. He was a member of the
+            New Haven Symphony Orchestra and served as Principal Cello of the Eastern Connecticut
+            Symphony Orchestra, where he appeared as soloist in Dvořák's cello concerto. The New
+            London Day praised Mr. Ohkubo for "technique with a swaggering panache, retaining
+            musicality...robust fullness from lower register...to the top."
+        </p>
+        <p>
+            Alan completed an Artist Diploma and a Master of Music degree at the Yale University
+            School of Music under the tutelage of master cellist and pedagogue Aldo Parisot. Prior to Yale,
+            Alan studied with world-renowned cellist and teacher Janos Starker at Indiana University
+            as a Barbara and David Jacobs Scholar.
+        </p>
+        <p>
+            An avid chamber musician, Alan has performed alongside artists such as David Shifrin, Lawrence Dutton,
+            Cho-Liang Lin, Daniel Ching, and Ko Iwasaki, among others. He has also appeared in solo and chamber recitals in Tokyo
+            and New York City on Charlotte White's Salon de Virtuosi concert series. Alan took part
+            in a series of concerts in Carnegie Hall while participating in the New York String Orchestra
+            Seminar. In recent summers, he has attended Music Masters Course Japan, an intensive
+            chamber music seminar held in Yokohama.
+        </p>
+        <p>
+            Alan is also a passionate teacher. He teaches privately and is a faculty member at Porterville Strings, a summer String
+            workshop in Porterville, California. Alan taught undergraduate cello and chamber music at Yale 
+            University as a teaching assistant.
+        </p>
+    </div>
+
+    <!-- Teaching div, content needs to be updated-->
+    <div id="teaching" class="main">
+        <h1>Teaching</h1>
+        <p>Alan is accepting private students of all ages and skill levels. Please fill out the form to get in touch.</p>
+        <a href="#" onclick="openContact()">Contact form</a>
+    </div>
+
+    <!-- Listen div -->
+    <div>
+        <h1>Listen</h1>
+        <p>This page is under construction. Please check back later.</p>
+        <h2>Video</h2>
+        <h2>Audio</h2>
+    </div>
+
+    <!-- Contact  -->
+    <div id="contact" class="contact">
+        <h1>Contact</h1>
+    </div>
+    
+
+    <!-- flexbox TBD template -->
+    <div class="container">
+        <div class="item-1 item">Item 1</div>
+        <div class="item-2 item">Item 2</div>
+        <div class="item-3 item">Item 3</div>
+        <div class="item-4 item">Item 4</div>
+        <div class="item-5 item">Item 5</div>
+        <div class="item-6 item">Item 6</div>
+    </div>
+</body>
+
+</html>
