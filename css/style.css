@@ -18,6 +18,13 @@ p, h3 {
   margin: 1em 0.25em;
 }
 
+img {
+  display: block;
+  margin: 0;
+  border-radius: 6px;  
+  width: 100%;
+}
+
 /* Flexbox */
 .container {
     display: flex;
@@ -103,6 +110,8 @@ ul {
     background-color: #444;
   }
   
+
+
   /* Media Queries */
 
   /* Large Screens */
