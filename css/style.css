@@ -8,7 +8,14 @@
 
 /* Sidebar Navigation Menu*/
 
-.sidebar {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -19,6 +26,16 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: .5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 }
 
 /* The sidebar links */
@@ -34,16 +51,10 @@
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
     color: #f1f1f1;
+    cursor: pointer;
   }
   
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+  
 
   /* .sidebar .homebtn {
     position: absolute;
@@ -73,3 +84,19 @@
     background-color: #444;
   }
   
+  /* Media Queries */
+
+  /* Large Screens */
+  @media (min-width: 768px) {
+    #hamburger {
+      display: none;
+    }
+
+    a.closebtn {
+      display: none;
+    }
+
+    li {
+      display: flex;
+    }
+  }
