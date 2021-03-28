@@ -15,11 +15,16 @@
 
 <body>
     <header>
+        <h1>Alan Ohkubo</h1>
+        <h3>Cello</h3>
+    </header>
+
+    <nav>
         <!-- Start of sidebar code, for large screens, needs links/href -->
         <div id="sideNav" class="sidebar">
             
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <ul>
+            <ul class="menu">
                 <li><a onclick="returnHome()">Home</a></li>
                 <li><a onclick="openBio()">Biography</a></li>
                 <li><a onclick="openTeaching()">Teaching</a></li>
@@ -37,109 +42,108 @@
 
         <!-- Start of Nav Bar Code: for large screens -->
         <div></div>
-    </header>
+    </nav>
     
     <main>
+            <!-- Welcome div -->
+        <div id="greeting" class="main">
+            <h2>Welcome to My Website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in arcu faucibus, semper nibh id, dictum odio. Nam congue tortor sed libero interdum, eu aliquam eros cursus. Praesent tristique consequat elit a dapibus. Donec fringilla neque a odio posuere rhoncus. Duis iaculis, neque eu convallis rhoncus, urna sem ornare tellus, non dapibus lorem magna at ante.
 
+            </p>
+        </div>
+
+        <!-- Bio div, content needs to be updated-->
+        <div id="bio" class="main">
+            <h2>Biography</h2>
+            <p>Cellist, Alan Ohkubo...completed a fellowship at the New World Symphony in Miami Beach, Florida. He was a member of the
+                New Haven Symphony Orchestra and served as Principal Cello of the Eastern Connecticut
+                Symphony Orchestra, where he appeared as soloist in Dvořák's cello concerto. The New
+                London Day praised Mr. Ohkubo for "technique with a swaggering panache, retaining
+                musicality...robust fullness from lower register...to the top."
+            </p>
+            <p>
+                Alan completed an Artist Diploma and a Master of Music degree at the Yale University
+                School of Music under the tutelage of Aldo Parisot. Prior to Yale,
+                Alan studied with Janos Starker at Indiana University as a Barbara and David Jacobs Scholar.
+            </p>
+            <p>
+                An avid chamber musician, Alan has performed alongside artists such as David Shifrin, Lawrence Dutton,
+                Cho-Liang Lin, Daniel Ching, and Ko Iwasaki, among others. He has also appeared in solo and chamber recitals in Tokyo
+                and New York City on Charlotte White's Salon de Virtuosi concert series. Alan took part
+                in a series of concerts in Carnegie Hall while participating in the New York String Orchestra
+                Seminar. In recent summers, he has attended Music Masters Course Japan, an intensive
+                chamber music seminar held in Yokohama.
+            </p>
+            <p>
+                Alan is also a passionate teacher. He teaches privately and is a faculty member at Porterville Strings, a summer String
+                workshop in Porterville, California. Alan taught undergraduate cello and chamber music at Yale 
+                University as a teaching assistant.
+            </p>
+        </div>
+
+        <!-- Teaching div, content needs to be updated-->
+        <div id="teaching" class="main">
+            <h2>Teaching</h2>
+            <p>Alan is accepting private students of all ages and skill levels. Please fill out the form to get in touch.</p>
+            <a href="#" onclick="openContact()">Contact form</a>
+        </div>
+
+        <!-- Listen div -->
+        <div>
+            <h2>Listen</h2>
+            <p>This page is under construction. Please check back later.</p>
+            <h3>Video</h3>
+            <h3>Audio</h3>
+        </div>
+
+        <!-- Contact  -->
+        <div id="contact" class="contact">
+            <!-- action needs a URL server-side; method: HTTP + "POST or GET" -->
+            <form action="index.html" method="post">
+        
+                <h2>Contact</h2>
+
+                <fieldset>
+
+                    <legend><span class="number">1.</span> Your Basic Info</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name"><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="mail" name="user_email"><br>
+
+                    <label>I am interested in:</label><br>
+                    <input type="checkbox" id="cellolessons" name="user_interest"><label for="interest">Cello Lessons</label><br>
+                    <input type="checkbox" id="performances" name="user_interest"><label for="interest">Performances</label><br>
+                    <input type="checkbox" id="other" name="user_interest"><label for="interest">Other</label><br>
+
+                    <!-- <label for="interest">I am interested in:</label>
+                    <select name="user_interest" id="interest">
+                        <option value="lessons">Cello Lessons</option>
+                        <option value="performances">Performances</option>
+                        <option value="other">Other</option>
+                    </select> -->
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend><span class="number">2.</span> Message</legend>
+
+
+                    <label for="message">Message:</label>
+                    <textarea name="user_message" id="message"></textarea>
+
+                </fieldset>
+
+                <button type="submit" onclick="formSubmitMessage()">Submit</button>
+
+            </form>
+        </div>
+    
     </main>
-    <!-- Welcome div -->
-    <div id="greeting" class="main">
-        <h1>Welcome to My Website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in arcu faucibus, semper nibh id, dictum odio. Nam congue tortor sed libero interdum, eu aliquam eros cursus. Praesent tristique consequat elit a dapibus. Donec fringilla neque a odio posuere rhoncus. Duis iaculis, neque eu convallis rhoncus, urna sem ornare tellus, non dapibus lorem magna at ante.
-
-        </p>
-    </div>
-
-    <!-- Bio div, content needs to be updated-->
-    <div id="bio" class="main">
-        <h1>Biography</h1>
-        <p>Cellist, Alan Ohkubo...completed a fellowship at the New World Symphony in Miami Beach, Florida. He was a member of the
-            New Haven Symphony Orchestra and served as Principal Cello of the Eastern Connecticut
-            Symphony Orchestra, where he appeared as soloist in Dvořák's cello concerto. The New
-            London Day praised Mr. Ohkubo for "technique with a swaggering panache, retaining
-            musicality...robust fullness from lower register...to the top."
-        </p>
-        <p>
-            Alan completed an Artist Diploma and a Master of Music degree at the Yale University
-            School of Music under the tutelage of Aldo Parisot. Prior to Yale,
-            Alan studied with Janos Starker at Indiana University as a Barbara and David Jacobs Scholar.
-        </p>
-        <p>
-            An avid chamber musician, Alan has performed alongside artists such as David Shifrin, Lawrence Dutton,
-            Cho-Liang Lin, Daniel Ching, and Ko Iwasaki, among others. He has also appeared in solo and chamber recitals in Tokyo
-            and New York City on Charlotte White's Salon de Virtuosi concert series. Alan took part
-            in a series of concerts in Carnegie Hall while participating in the New York String Orchestra
-            Seminar. In recent summers, he has attended Music Masters Course Japan, an intensive
-            chamber music seminar held in Yokohama.
-        </p>
-        <p>
-            Alan is also a passionate teacher. He teaches privately and is a faculty member at Porterville Strings, a summer String
-            workshop in Porterville, California. Alan taught undergraduate cello and chamber music at Yale 
-            University as a teaching assistant.
-        </p>
-    </div>
-
-    <!-- Teaching div, content needs to be updated-->
-    <div id="teaching" class="main">
-        <h1>Teaching</h1>
-        <p>Alan is accepting private students of all ages and skill levels. Please fill out the form to get in touch.</p>
-        <a href="#" onclick="openContact()">Contact form</a>
-    </div>
-
-    <!-- Listen div -->
-    <div>
-        <h1>Listen</h1>
-        <p>This page is under construction. Please check back later.</p>
-        <h2>Video</h2>
-        <h2>Audio</h2>
-    </div>
-
-    <!-- Contact  -->
-    <div id="contact" class="contact">
-        <!-- action needs a URL server-side; method: HTTP + "POST or GET" -->
-        <form action="index.html" method="post">
-    
-            <h1>Contact</h1>
-
-            <fieldset>
-
-                <legend><span class="number">1.</span> Your Basic Info</legend>
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name"><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="mail" name="user_email"><br>
-
-                <label>I am interested in:</label><br>
-                <input type="checkbox" id="cellolessons" name="user_interest"><label for="interest">Cello Lessons</label><br>
-                <input type="checkbox" id="performances" name="user_interest"><label for="interest">Performances</label><br>
-                <input type="checkbox" id="other" name="user_interest"><label for="interest">Other</label><br>
-
-                <!-- <label for="interest">I am interested in:</label>
-                <select name="user_interest" id="interest">
-                    <option value="lessons">Cello Lessons</option>
-                    <option value="performances">Performances</option>
-                    <option value="other">Other</option>
-                </select> -->
-
-            </fieldset>
-
-            <fieldset>
-
-                <legend><span class="number">2.</span> Message</legend>
-
-
-                <label for="message">Message:</label>
-                <textarea name="user_message" id="message"></textarea>
-
-            </fieldset>
-
-            <button type="submit" onclick="formSubmitMessage()">Submit</button>
-
-        </form>
-    </div>
-    
 
     <!-- flexbox TBD template -->
     <div class="container">
