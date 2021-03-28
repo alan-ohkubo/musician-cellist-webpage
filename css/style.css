@@ -167,4 +167,9 @@ ul {
     }
   }
 
-  
+/* GRID */
+.grid-container {
+  display:grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 1.5em;
+}  
