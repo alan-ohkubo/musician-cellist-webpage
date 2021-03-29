@@ -48,36 +48,28 @@ function openNav() {
 
  
 
-// SIDEBAR -SHOW DIVs
-function openBio() {
-  var x = document.getElementById("bio");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-//   // https://www.tutorialspoint.com/how-to-hide-a-div-in-javascript-on-button-click
-}
+// // SIDEBAR -SHOW DIVs
+// function openBio() {
+//   var x = document.getElementById("bio");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+// //   // https://www.tutorialspoint.com/how-to-hide-a-div-in-javascript-on-button-click
+// }
 
-function openTeaching() {
-  var y = document.getElementById("teaching");
-  if (y.style.display === "none") {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";
-  }
-}
-
-
-// THE FOR LOOP PROJECT FOR HIDE/SHOW DIVS
-
-// Function declaration for hiding pages
-// function hide (elements) {
-//   elements = elements.length ? elements : [elements];
-//   for (let i = 0; i < elements.length; i++) {
-//     elements[i].style.display = 'none';
+// function openTeaching() {
+//   var y = document.getElementById("teaching");
+//   if (y.style.display === "none") {
+//     y.style.display = "block";
+//   } else {
+//     y.style.display = "none";
 //   }
 // }
+
+
+// NAVIGATION BAR
 
 function hideAll() {
   elements = document.querySelectorAll('div.page');
@@ -89,13 +81,6 @@ function hideAll() {
 function show() {
   style.display = "block";
 }
-
-function pagecounter() {
-  console.log( document.querySelectorAll('div.page') 
-  )
-}
-
-
 
 function showHome() {
   hideAll();
