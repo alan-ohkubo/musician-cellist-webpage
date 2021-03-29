@@ -67,3 +67,14 @@ function openTeaching() {
     y.style.display = "none";
   }
 }
+
+
+// THE FOR LOOP PROJECT FOR HIDE/SHOW DIVS
+
+// Function declaration for hiding pages
+function hide (elements) {
+  elements = elements.length ? elements : [elements];
+  for (var index = 0; index < elements.length; index++) {
+    elements[index].style.display = 'none';
+  }
+}

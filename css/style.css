@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+header h1 {
+  text-transform: uppercase;
+}
+
 main {
   margin: 35px 15px;
 }
@@ -154,6 +158,7 @@ ul {
       width: 45%;
       height: auto;
     }
+
   }
 
   @media (max-width: 767px) {
