@@ -10,14 +10,15 @@ a {
   cursor: pointer
 }
 
-header{
+header {
   text-transform: uppercase;
 }
 
 main {
+  padding-top: 1em;
   margin: 35px 15px;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 h2, h3 {
@@ -30,9 +31,9 @@ p, h3 {
 
 img {
   display: block;
-  margin: 0;
+  margin: auto;
   border-radius: 6px;  
-  width: 100%;
+  width: 98%;
 }
 
 /* Sidebar Navigation Menu*/
@@ -127,6 +128,14 @@ ul {
     max-width: 900px;
   }
   
+  img {
+    width: 85%;
+  }
+
+  #decoding-bach-1 {
+    width: 55%;
+  }
+
   #hamburger {
     display: none;
   }
@@ -168,11 +177,15 @@ ul {
 }
 
 /* Intermediate Screens */
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   main {
     margin-top: 1rem;
     font-size: 1.2rem;
     line-height: 2.2rem;
     width: 90%;
+  }
+
+  img {
+    width: 95%;
   }
 }
