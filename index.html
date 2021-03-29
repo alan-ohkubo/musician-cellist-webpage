@@ -10,6 +10,7 @@
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="js/script.js"></script>
+    <!-- <script type="text/javascript" src="js/player.js"></script> -->
 </head>
 
 <body onload="javascript: showHome()">
@@ -117,19 +118,19 @@
             <h3>Video</h3>
 
                 <!-- Video Player -->
-                <video id="video-player">
-                    <source src="" type="">
-                </video>
-
-                <div id="player-controls">
-
-                    <input type="image" src="img/play1.png" onlick="playVid()" id="play-button">
-                    <input type="image" src="img/pause1.png" onlick="pauseVid()" id="pause-button">
-                    <input type="image" src="img/stop1.png" onlick="stopVid()" id="stop-button">
-                    
-                    <img src="img/volume.png" id="volume-img" alt="">
-                    <input type="range" id="change-volume" onchange="changeVol()" step="0.05" min="0" max="1" value="0.5">
-                
+                <div id="wrapper">
+                    <div id='player_wrapper'>
+                     <video id='video_player'>
+                      <source src='img/bachsample.mp4' type='video/mp4'>
+                     </video>
+                     <div id='player_controls'>
+                      <input type="image" src="img/play1.png" onclick="play_vid()" id="play_button">
+                      <input type="image" src="img/pause1.png" onclick="pause_vid()" id="pause_button">
+                      <input type="image" src="img/stop1.png" onclick="stop_vid()" id="stop_button">
+                      <img src="img/volume.png" id="vol_img">
+                      <input type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+                     </div>
+                    </div>
                 </div>
             
                 <h3>Audio</h3>

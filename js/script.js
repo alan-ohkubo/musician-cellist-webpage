@@ -53,27 +53,31 @@ function openNav() {
 
 // VIDEO PLAYER
 
-function startplayer() {
-  player = document.getElementById("video-player");
-  player.controls = false;
-}
+// document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
+//   var player;
 
-function playVid() {
-  player.play();
-}
 
-function pauseVid() {
-  player.pause();
-}
+// function startplayer() {
+//   player = document.getElementById("video-player");
+//   player.controls = false;
+// }
 
-function stopVid() {
-  player.pause();
-  player.currentTime = 0;
-}
+// function playVid() {
+//   player.play();
+// }
 
-function changeVol() {
-  player.volume=document.getElementById("change-volume").value;
-}
+// function pauseVid() {
+//   player.pause();
+// }
+
+// function stopVid() {
+//   player.pause();
+//   player.currentTime = 0;
+// }
+
+// function changeVol() {
+//   player.volume=document.getElementById("change-volume").value;
+// }
 
 
  

@@ -1,9 +1,0 @@
-/* Grid Layout */
-
-.grid {
-    display: grid;
-    max-width: 500px;
-    grid-template-columns: 1 fr 1fr;
-    grid-gap: 15px;
-    grid-auto-flow: column;
-}
