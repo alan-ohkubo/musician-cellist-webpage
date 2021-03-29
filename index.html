@@ -53,8 +53,8 @@
             <img src="img/applause-1.jpg" alt="" id="welcome-img">
             <h2>Welcome!</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in arcu faucibus, semper nibh id, dictum odio. Nam congue tortor sed libero interdum, eu aliquam eros cursus. Praesent tristique consequat elit a dapibus. Donec fringilla neque a odio posuere rhoncus. Duis iaculis, neque eu convallis rhoncus, urna sem ornare tellus, non dapibus lorem magna at ante.
-
+            <p>
+                My name is Alan, and I am a cellist. Thank you for visiting my website.
             </p>
         </div>
 
@@ -91,6 +91,8 @@
                 chamber music seminar held in Yokohama.
             </p>
 
+            <img src="img/tokyo-trio-1.jpg" alt="" class="flex-item">
+
             <p class="flex-item">
                 Alan is also a passionate teacher. He teaches privately and is a faculty member at Porterville Strings, a summer String
                 workshop in Porterville, California. Alan taught undergraduate cello and chamber music at Yale 
@@ -120,7 +122,7 @@
 
         <div id="contact" class="page">
             <!-- action needs a URL server-side; method: HTTP + "POST or GET" -->
-            <form action="index.html" method="post" id="contactform">
+            <form action="index.html" method="post" id="contactform" name="contactform">
         
                 <h2>Contact</h2>
 
@@ -129,12 +131,12 @@
                     <legend><span class="number">1</span> Your Basic Info</legend>
 
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name"><br>
+                    <input type="text" id="name" name="user_name" required><br>
                     
                     <label for="email">Email:</label>
-                    <input type="email" id="mail" name="user_email"><br>
+                    <input type="email" id="mail" name="user_email" required><br>
 
-                    <label for="email">Confirm Email:</label>
+                    <label for="email">Confirm Email:</label required>
                     <input type="email" id="mailconfirm" name="user_emailconfirm"><br>
 
                     <label>I am interested in:</label><br>
@@ -155,9 +157,11 @@
 
                 </fieldset>
 
-                <button type="submit" onclick="formSubmitMessage()">Submit</button>
+                <button type="submit" onclick="formSubmit()">Submit</button>
 
             </form>
+
+            <h2 id="feedback"></h2>
 
         </div>
     
