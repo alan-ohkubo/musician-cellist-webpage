@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-header h1 {
+header{
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@ img {
   width: 100%;
 }
 
-/* Navigation Menu*/
+/* Sidebar Navigation Menu*/
 
 ul {
   list-style-type: none;
@@ -85,7 +85,9 @@ ul {
     color: #f1f1f1;
     cursor: pointer;
   }
-
+  
+ 
+  /* The button used to open the sidebar */
   .openbtn {
     position: absolute;
     top: 0;
@@ -105,86 +107,69 @@ ul {
     background-color: #444;
   }
   
-  /* Media Queries */
 
-  /* Large Screens */
-  @media (min-width: 768px) {
-    header {
-      background-color: #111;
-      color: whitesmoke;
-      text-align: center;
-      padding: 5px 10px;
-    }
+/* Media Queries */
 
-    main {
-      margin: auto;
-      max-width: 900px;
-    }
-    
-    #hamburger {
-      display: none;
-    }
-
-    a.closebtn {
-      display: none;
-    }
-
-    li {
-      display: flex;
-    }
-
-    nav {
-      background-color: #111;
-      color: whitesmoke;
-    }
-
-    .menu {
-      display: flex;
-      justify-content: center;
-      background-color: #111;
-    }
-
-    .bio:img {
-      width: 45%;
-      height: auto;
-    }
+/* Large Screens */
+@media (min-width: 768px) {
+  header {
+    background-color: #111;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px 10px;
   }
 
-  @media (max-width: 767px) {
-    header {
-      text-align: left;
-      padding: 10px;
-      background: #111;
-      color: whitesmoke;
-      height: 84px;
-    }
+  main {
+    margin: auto;
+    max-width: 900px;
+  }
+  
+  #hamburger {
+    display: none;
   }
 
-  /* Intermediate Screens */
-  @media (min-width: 769px) and (max-width: 1023px) {
-    main {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      line-height: 2.2rem;
-      width: 90%;
-    }
+  a.closebtn {
+    display: none;
   }
-   
-/* GRID */
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+
+  li {
+    display: flex;
+  }
+
+  nav {
+    background-color: #111;
+    color: whitesmoke;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+  }
+
+  .bio:img {
+    width: 45%;
+    height: auto;
+  }
+
 }
 
-.flex-container img {
-  width: 80%;
-  height: auto;
-  margin: auto;
+@media (max-width: 767px) {
+  header {
+    justify-content: left;
+    padding: 10px;
+    background: #111;
+    color: whitesmoke;
+    height: 84px;
+  }
 }
 
-
-#bio {
-  display: flex;
-  flex-shrink: 5;
+/* Intermediate Screens */
+@media (min-width: 769px) and (max-width: 1023px) {
+  main {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    width: 90%;
+  }
 }

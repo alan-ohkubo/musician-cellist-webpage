@@ -51,20 +51,19 @@
 
         <div id="home" class="page">
             <img src="img/applause-1.jpg" alt="" id="welcome-img">
-            <h2>Welcome!</h2>
+            <h2>Welcome</h2>
 
             <p>
-                My name is Alan, and I am a cellist. Thank you for visiting my website.
+                My name is Alan, and I am a cellist. Thank you for visiting my webpage.
             </p>
         </div>
 
         <!-- BIOGRAPHY -->
 
         <div id="bio" class="page">
-        
             <h2>Biography</h2>
             
-            <p class="flex-item">
+            <p>
                 Cellist, Alan Ohkubo recently completed a fellowship at the New World Symphony in Miami Beach, Florida. He was a member of the
                 New Haven Symphony Orchestra and served as Principal Cello of the Eastern Connecticut
                 Symphony Orchestra, where he appeared as soloist in Dvořák's cello concerto. The New
@@ -72,17 +71,17 @@
                 musicality...robust fullness from lower register...to the top."
             </p>
 
-            <img src="img/bach-6.jpg" alt="" class="flex-item">
+            <img src="img/bach-6.jpg">
             
-            <p class="flex-item">
+            <p>
                 Alan completed an Artist Diploma and a Master of Music degree at the Yale University
                 School of Music under the tutelage of Aldo Parisot. Prior to Yale,
                 Alan studied with Janos Starker at Indiana University as a Barbara and David Jacobs Scholar.
             </p>
             
-            <img src="img/decoding-bach-1.jpg" alt="" class="flex-item">
+            <img src="img/decoding-bach-1.jpg">
 
-            <p class="flex-item">
+            <p>
                 An avid chamber musician, Alan has performed alongside artists such as David Shifrin, Lawrence Dutton,
                 Cho-Liang Lin, Daniel Ching, and Ko Iwasaki, among others. He has also appeared in solo and chamber recitals in Tokyo
                 and New York City on Charlotte White's Salon de Virtuosi concert series. Alan took part
@@ -91,14 +90,13 @@
                 chamber music seminar held in Yokohama.
             </p>
 
-            <img src="img/tokyo-trio-1.jpg" alt="" class="flex-item">
+            <img src="img/tokyo-trio-1.jpg">
 
-            <p class="flex-item">
+            <p>
                 Alan is also a passionate teacher. He teaches privately and is a faculty member at Porterville Strings, a summer String
                 workshop in Porterville, California. Alan taught undergraduate cello and chamber music at Yale 
                 University as a teaching assistant.
             </p>
-
         </div>
 
         <!-- TEACHING -->
@@ -122,7 +120,7 @@
 
         <div id="contact" class="page">
             <!-- action needs a URL server-side; method: HTTP + "POST or GET" -->
-            <form action="index.html" method="post" id="contactform" name="contactform">
+            <form action="index.html" method="post" id="contactform">
         
                 <h2>Contact</h2>
 
@@ -131,12 +129,12 @@
                     <legend><span class="number">1</span> Your Basic Info</legend>
 
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" required><br>
+                    <input type="text" id="name" name="user_name"><br>
                     
                     <label for="email">Email:</label>
-                    <input type="email" id="mail" name="user_email" required><br>
+                    <input type="email" id="mail" name="user_email"><br>
 
-                    <label for="email">Confirm Email:</label required>
+                    <label for="email">Confirm Email:</label>
                     <input type="email" id="mailconfirm" name="user_emailconfirm"><br>
 
                     <label>I am interested in:</label><br>
@@ -157,11 +155,9 @@
 
                 </fieldset>
 
-                <button type="submit" onclick="formSubmit()">Submit</button>
+                <button type="submit" onclick="formSubmitMessage()">Submit</button>
 
             </form>
-
-            <h2 id="feedback"></h2>
 
         </div>
     

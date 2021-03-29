@@ -1,18 +1,5 @@
 
-
-/* Set the width of the sidebar to 200px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("sideNav").style.width = "200px";
-    document.getElementById("main").style.marginLeft = "auto";
-  }
-  
-  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("sideNav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
-
-// NAVIGATION BAR, Hide & Show Divs
+// NAVIGATION BAR
 
 function hideAll() {
   elements = document.querySelectorAll('div.page');
@@ -21,7 +8,9 @@ function hideAll() {
   }
 }
 
-// The following code needs to be revised to follow DRY principle
+function show() {
+  style.display = "block";
+}
 
 function showHome() {
   hideAll();
@@ -47,3 +36,19 @@ function showContact() {
   hideAll();
   document.getElementById("contact").style.display = "block";
 }
+
+// SIDE NAV MENU
+
+/* Set the width of the sidebar to 200px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("sideNav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "auto";
+  }
+  
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("sideNav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+
+ 
