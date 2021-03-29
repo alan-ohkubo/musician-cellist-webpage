@@ -51,4 +51,29 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "0";
   }
 
+// VIDEO PLAYER
+
+function startplayer() {
+  player = document.getElementById("video-player");
+  player.controls = false;
+}
+
+function playVid() {
+  player.play();
+}
+
+function pauseVid() {
+  player.pause();
+}
+
+function stopVid() {
+  player.pause();
+  player.currentTime = 0;
+}
+
+function changeVol() {
+  player.volume=document.getElementById("change-volume").value;
+}
+
+
  
