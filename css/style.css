@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+a {
+  cursor: pointer
+}
+
 header{
   text-transform: uppercase;
 }
@@ -107,7 +111,6 @@ ul {
     background-color: #444;
   }
   
-
 /* Media Queries */
 
 /* Large Screens */
