@@ -72,9 +72,52 @@ function openTeaching() {
 // THE FOR LOOP PROJECT FOR HIDE/SHOW DIVS
 
 // Function declaration for hiding pages
-function hide (elements) {
-  elements = elements.length ? elements : [elements];
-  for (var index = 0; index < elements.length; index++) {
-    elements[index].style.display = 'none';
+// function hide (elements) {
+//   elements = elements.length ? elements : [elements];
+//   for (let i = 0; i < elements.length; i++) {
+//     elements[i].style.display = 'none';
+//   }
+// }
+
+function hideAll() {
+  elements = document.querySelectorAll('div.page');
+  for ( let i = 0; i < elements.length; i++ ) {
+    elements[i].style.display = 'none';
   }
+}
+
+function show() {
+  style.display = "block";
+}
+
+function pagecounter() {
+  console.log( document.querySelectorAll('div.page') 
+  )
+}
+
+
+
+function showHome() {
+  hideAll();
+  document.getElementById("home").style.display = "block";
+}
+
+function showBio() {
+  hideAll();
+  document.getElementById("bio").style.display = "block";
+}
+
+function showTeaching() {
+  hideAll();
+  document.getElementById("teaching").style.display = "block";
+}
+
+function showMedia() {
+  hideAll();
+  document.getElementById("media").style.display = "block";
+}
+
+function showContact() {
+  hideAll();
+  document.getElementById("contact").style.display = "block";
 }

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="js/sidebar.js"></script>
+    <script src="js/script.js"></script>
     
 </head>
 
-<body>
+<body onload="javascript: showHome()">
 
     <header>
         <h1>Alan Ohkubo</h1>
@@ -25,11 +25,11 @@
             
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="menu">
-                <li><a onclick="returnHome()">Home</a></li>
-                <li><a onclick="openBio()">Biography</a></li>
-                <li><a onclick="openTeaching()">Teaching</a></li>
-                <li><a onlick="openListen()">Listen</a></li>
-                <li><a onclick="openContact()">Contact</a></li>
+                <li><a onclick="showHome()">Home</a></li>
+                <li><a onclick="showBio()">Biography</a></li>
+                <li><a onclick="showTeaching()">Teaching</a></li>
+                <li><a onclick="showMedia()">Listen</a></li>
+                <li><a onclick="showContact()">Contact</a></li>
             </ul>
         </div>
 
@@ -46,7 +46,7 @@
     
     <main>
             <!-- Welcome div -->
-        <div id="home" class="main">
+        <div id="home" class="page">
             <img src="img/applause-banner.jpg" alt="" id="welcome-img">
             <h2>Welcome!</h2>
 
@@ -55,9 +55,11 @@
             </p>
         </div>
 
-        <h2>Biography</h2>
+        
 
-        <div id="bio" class="flex-container">
+        <div id="bio" class="page">
+        
+            <h2>Biography</h2>
             
             <p class="flex-item">
                 Cellist, Alan Ohkubo recently completed a fellowship at the New World Symphony in Miami Beach, Florida. He was a member of the
@@ -132,14 +134,14 @@
         </div> -->
 
         <!-- Teaching div, content needs to be updated-->
-        <div id="teaching" class="main">
+        <div id="teaching" class="page">
             <h2>Teaching</h2>
             <p>Alan is accepting private students of all ages and skill levels. Please fill out the form to get in touch.</p>
             <a href="#" onclick="openContact()">Contact form</a>
         </div>
 
         <!-- Listen div -->
-        <div id="listen">
+        <div id="media" class="page">
             <h2>Listen</h2>
             <p>This page is under construction. Please check back later.</p>
             <h3>Video</h3>
@@ -147,7 +149,7 @@
         </div>
 
         <!-- Contact  -->
-        <div id="contact" class="contact">
+        <div id="contact" class="page">
             <!-- action needs a URL server-side; method: HTTP + "POST or GET" -->
             <form action="index.html" method="post" id="contactform">
         
