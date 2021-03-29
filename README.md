@@ -17,3 +17,10 @@ JavaScript:
 
 > The Navigation buttons runs a couple JavaScript functions which hide and show the desired div.
 
+●	Create a custom video player with at least one custom element (such as the progress bar, play button, etc). This is also not covered in the required Treehouse content.
+
+>Work in progress
+
+●	Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow. For example, display it back to the user on button click, or change a setting on the page based on a section. Having a form that does nothing on clicking Submit or that just refreshes the page is not enough - you must capture the value(s) of the form and use it somehow.
+
+>work in progress
