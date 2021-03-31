@@ -9,12 +9,6 @@ function hideAll() {
   }
 }
 
-
-function show() {
-  elements = document.querySelector
-  elementsstyle.display = "block";
-}
-
 function showHome() {
   hideAll();
   document.getElementById("home").style.display = "block";
@@ -40,7 +34,10 @@ function showContact() {
   document.getElementById("contact").style.display = "block";
 }
 
-// SIDE NAV BAR =======================================================================
+// ====================================
+// COLLAPSIBLE SIDE NAVIGATION MENU
+// ====================================
+
 
 /* Set the width of the sidebar to 200px and the left margin of the page content to 250px */
 function openNav() {
