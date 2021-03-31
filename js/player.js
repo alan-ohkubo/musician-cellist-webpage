@@ -1,3 +1,5 @@
+// Video Player ===================================================================
+
 document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
 var player;
 

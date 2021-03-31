@@ -1,5 +1,6 @@
-
-// NAVIGATION BAR
+// ====================================
+// NAVIGATION Hide/Show Desired <divs>
+// ====================================
 
 function hideAll() {
   elements = document.querySelectorAll('div.page');
@@ -8,8 +9,10 @@ function hideAll() {
   }
 }
 
+
 function show() {
-  style.display = "block";
+  elements = document.querySelector
+  elementsstyle.display = "block";
 }
 
 function showHome() {
@@ -37,7 +40,7 @@ function showContact() {
   document.getElementById("contact").style.display = "block";
 }
 
-// SIDE NAV MENU
+// SIDE NAV BAR =======================================================================
 
 /* Set the width of the sidebar to 200px and the left margin of the page content to 250px */
 function openNav() {
@@ -51,7 +54,8 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "0";
   }
 
-// VIDEO PLAYER
+
+// VIDEO PLAYER =========================================================================
 
 // document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
 //   var player;
