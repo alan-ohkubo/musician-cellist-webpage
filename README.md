@@ -15,7 +15,7 @@ CSS:
 ● Create your own original CSS animation. For example, create a loading spinner or menu
 animation.
 
-> 1.) Created an concentric geometric shapes animation that displays on the welcome screen. A starting point for designing a dynamic site logo and working toward a dynamic website that breathes in a tastful way. CSS appears on lines 167-201.
+> 1.) Created a text and concentric geometric shapes animation that display on the welcome screen. This is a starting point for designing a site logo. I would like to create a dynamic, animated websites that breathe in a tasteful way. CSS appears on lines 168-247.
 
 > 2.) The sidebar menu utilizes the CSS transition to appear to slide out on opening and retract on close.
 
