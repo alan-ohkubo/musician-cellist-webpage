@@ -15,9 +15,10 @@ CSS:
 ● Create your own original CSS animation. For example, create a loading spinner or menu
 animation.
 
-> 1.) The sidebar menu utilizes the CSS transition to appear to slide out on opening and retract on close.
-> 2.) The menu buttons change appearance slightly on hover using the :hover pseudoclass.
+> 1.) Created an concentric geometric shapes animation that displays on the welcome screen. A starting point for designing a dynamic site logo and working toward a dynamic website that breathes in a tastful way. CSS appears on lines 167-201.
 
+> 2.) The sidebar menu utilizes the CSS transition to appear to slide out on opening and retract on close.
+> 3.) The menu buttons change appearance slightly on hover using the :hover pseudoclass.
 
 
 JavaScript:
@@ -26,12 +27,3 @@ JavaScript:
 
 > The HTML is structured as a single page, but divs are selective hidden and shown by selecting options from the navigation menu. Clicking on a navigation item runs a JavaScript function which shows the desired div, while hiding others. These functions can be found on lines 5-35 of script.js.
 
-
-
-●	Create a custom video player with at least one custom element (such as the progress bar, play button, etc). This is also not covered in the required Treehouse content.
-
->Work in progress
-
-●	Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow. For example, display it back to the user on button click, or change a setting on the page based on a section. Having a form that does nothing on clicking Submit or that just refreshes the page is not enough - you must capture the value(s) of the form and use it somehow.
-
->work in progress
