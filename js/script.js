@@ -38,17 +38,14 @@ function showContact() {
 // COLLAPSIBLE SIDE NAVIGATION MENU
 // ====================================
 
-
-/* Set the width of the sidebar to 200px and the left margin of the page content to 250px */
+/* Set the width of the sidebar to 200px */
 function openNav() {
     document.getElementById("sideNav").style.width = "200px";
-    document.getElementById("main").style.marginLeft = "auto";
   }
   
-  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  /* Set the width of the sidebar to 0 */
   function closeNav() {
     document.getElementById("sideNav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
   }
 
 

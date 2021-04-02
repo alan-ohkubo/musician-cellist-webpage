@@ -21,7 +21,7 @@ header h1 {
 }
 
 main {
-  padding-top: 1em;
+  padding-top: .5em;
   margin: 35px 15px;
   font-size: 1.125em;
   line-height: 2rem;
@@ -51,7 +51,22 @@ a {
 }
 
 li {
-  font-size: 1.8em;
+  font-size: 1.5em;
+}
+
+.button1 {
+  display: inline-block;
+  padding: 2px 6px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: rgb(68, 129, 241);
+  transition: 250ms;
+}
+
+a.button1:hover {
+  background-color: rgb(33, 97, 218); ;
 }
 
 /* These <div> pages are hidden on start but will appear after navigation buttons are clicked. */
@@ -75,17 +90,16 @@ ul {
 @media (max-width: 767px) {
   
   .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    height: 100%;
+    width: 0; 
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
     right: 0;
-    background-color: rgb(35, 35, 35); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 84px; /* Place content 84px from the top */
-    transition: .5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
+    background-color: #111111; 
+    overflow-x: hidden; 
+    padding-top: 84px; 
+    transition: .5s; 
 
   /* Position and style the close button (top right corner) */
   .sidebar .closebtn {
@@ -101,35 +115,35 @@ ul {
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: #818181;
+    color: #f5f5f5;
     display: block;
     transition: 0.3s;
   }
   
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
+/* When you mouse over the navigation links, changes their color */
+.sidebar a:hover {
+  color: #ffffff;
+  background-color: rgb(46, 46, 46);
+}
   
  
-  /* The button used to open the sidebar */
-  .openbtn {
-    position: absolute;
-    top: 0;
-    right: 0px;
- 
-    font-size: 3rem;
-    cursor: pointer;
-    background-color: #111;
-    color: whitesmoke;
-    /* padding: .5em .75em; */
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
+/* The button used to open the sidebar */
+.openbtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: #111;
+  color: whitesmoke;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
 
 /* ============================================
 CONTACT FORM
@@ -139,7 +153,8 @@ form {
   background-color: rgb(218, 218, 218);
   padding: 1em;
   margin: auto;
-  border: black 3px;
+  /* border: black 3px; */
+  border-radius: 6px;
   width: 100%;
   max-width: 600px;  
 }
@@ -201,10 +216,10 @@ Media Queries
     margin: auto;
     max-width: 900px;
   }
-  
+
   .sidebar a {
     font-size: 1.5rem;
-    padding-bottom: 10px;
+    padding: 8px 18px 8px 18px;
   }
 
   img {
@@ -221,10 +236,6 @@ Media Queries
 
   a.closebtn {
     display: none;
-  }
-
-  li {
-    display: flex;
   }
 
   nav {
@@ -245,16 +256,18 @@ Media Queries
 }
 
 /* Intermediate Screens */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 540px) and (max-width: 767px) {
   main {
     margin-top: 1rem;
-    font-size: 1.2rem;
-    line-height: 2.2rem;
     width: 90%;
   }
 
   img {
     width: 95%;
+  }
+
+  #decoding-bach-1 {
+    width: 85%;
   }
 }
 
