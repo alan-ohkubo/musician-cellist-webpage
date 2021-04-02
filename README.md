@@ -18,6 +18,7 @@ animation.
 > 1.) Created an concentric geometric shapes animation that displays on the welcome screen. A starting point for designing a dynamic site logo and working toward a dynamic website that breathes in a tastful way. CSS appears on lines 167-201.
 
 > 2.) The sidebar menu utilizes the CSS transition to appear to slide out on opening and retract on close.
+
 > 3.) The menu buttons change appearance slightly on hover using the :hover pseudoclass.
 
 
